@@ -24,3 +24,10 @@ jobs:
       #   timeout-minutes: 5
       #   env:
       #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+
+      sonar-scanner \
+  -Dsonar.projectKey=lab \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://18.188.140.245:9000 \
+  -Dsonar.login=sqa_1617995a4d4543efec31fc29177bbf271b0ce697
